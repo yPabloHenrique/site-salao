@@ -1,0 +1,300 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+header {
+    background-color: #333;
+    font-family: "Poppins", sans-serif;
+    padding: 15px 30px;
+}
+header h1 {
+    color: #fff0ac;
+}
+.nav {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    align-items: center;
+    max-width: 1228px;
+}
+nav {
+    display: none;
+}
+header > .nav > nav > a {
+    text-decoration: none;
+    color: #fff0ac;
+    font-weight: bold;
+    position: relative;
+}
+nav > a::after {
+    content: "";
+    position: absolute;
+    background-image: linear-gradient(90deg, #fff0ac, rgb(160, 152, 147));
+    height: 3px;
+    width: 0;
+    left: 0;
+    bottom: -8px;
+    transition: 0.5s;
+}
+nav > a:hover::after {
+    width: 100%;
+}
+.tag-box-banner {
+    background-image: linear-gradient(90deg, #ffe4a8, #979797);
+    padding: 10px 20px;
+    color: #332900d0;
+    border-radius: 30px;
+    width: fit-content;
+}
+.banner {
+    background-image: url("../imagens/borrao-de-ginastica-e-fitness.jpg");
+    height: 600px;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+}
+.box-banner {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+    padding: 20px;
+    margin-left: 50px;
+    font-family: "Poppins", sans-serif;
+}
+.box-banner h2 {
+    font-family: "Playfair Display", serif;
+    letter-spacing: 2px;
+}
+.box-banner p {
+    color: #fff;
+    font-size: 1.1em;
+    margin: 10px 0px;
+}
+.box-banner a {
+    text-decoration: none;
+    color: #333;
+    background-color: #fff0ac;
+    padding: 10px 15px;
+    border-radius: 5px;
+    font-weight: bold;
+    width: fit-content;
+}
+.blur-banner {
+    background-color: rgba(0, 0, 0, 0.5);
+    height: 600px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.box-banner h2 {
+    color: #fff0ac;
+    font-size: 4em;
+}
+.about-me {
+    height: 600px;
+    background-color: #fff0ac;
+}
+.about-me-pai {
+    padding: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    gap: 50px;
+}
+.box-content {
+    max-width: 600px;
+}
+.box-content h2 {
+    font-family: "Playfair Display", serif;
+    margin-bottom: 15px;
+    font-size: 3em;
+    position: relative;
+}
+.box-content > h2:before {
+    content: "";
+    height: 5px;
+    width: 100px;
+    position: absolute;
+    top: 60px;
+    display: block;
+    background-image: linear-gradient(90deg, rgb(243, 184, 101), rgba(255, 177, 146, 0.664));
+    border-radius: 20px;
+}
+.box-content p {
+    font-family: "Lato", sans-serif;
+    font-size: 1.1em;
+    line-height: 1.5em;
+}
+.img-about {
+    max-width: 600px;
+}
+.img-about img {
+    max-width: 600px;
+    width: 100%;
+    border-radius: 30px;
+}
+.box-servicos {
+    padding: 50px 10px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    max-width: 1228px;
+    gap: 100px;
+    margin: 0 auto;
+}
+.blur-servicos {
+    background-image: url("../imagens/noiva-da-equipe-comemorando-antes-casamento.jpg");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+.servicos {
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 60px 0px;
+}
+.servicos h2 {
+    font-family: "Playfair Display", serif;
+    text-align: center;
+    margin-bottom: 40px;
+    font-size: 3em;
+    color: #fff0ac;
+}
+.card-servico {
+    background-color: #fff0ac;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 300px;
+    text-align: center;
+    font-family: "Poppins", sans-serif;
+}
+.card-servico img {
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+.blur-planos {
+    background-color: #00000080;
+    padding: 50px 0px;
+}
+.planos {
+    background-image: url("../imagens/mao-segurando-compo-escovas.jpg");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+.planos h2 {
+    font-family: "Playfair Display", serif;
+    text-align: center;
+    margin-bottom: 40px;
+    font-size: 3em;
+    color: #fff0ac;
+}
+.box-planos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 70px;
+    margin: 0 auto;
+    padding: 50px 10px;
+    max-width: 1440px;
+}
+.card-plano {
+    background-color: #11111188;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 350px;
+    font-family: "Poppins", sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.card-plano h3 {
+    text-align: center;
+    color: #ffec8e;
+    margin-bottom: 15px;
+    font-size: 1.5em;
+}
+.card-plano h4 {
+    text-align: center;
+    margin-bottom: 15px;
+    color: #fff0ac;
+}
+.card-plano p {
+    font-size: 0.9em;
+    line-height: 1.5em;
+    padding: 10px 0px;
+    color: #ebc82e;
+    font-weight: 500;
+    border-bottom: #ffe055 2.5px solid;
+    margin-bottom: 20px;
+}
+.card-plano p:last-of-type {
+    border: none;
+    margin-bottom: 30px;
+}
+.card-plano a {
+    text-decoration: none;
+    color: #000;
+    background-color: #ffda35;
+    padding: 10px 40px;
+    border-radius: 30px;
+    font-weight: bold;
+    margin: 0 auto;
+}
+footer {
+    background-color: #333;
+    color: #fff0ac;
+    padding: 70px 20px;
+    font-family: "Poppins", sans-serif;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: space-between;
+}
+.box-footer {
+    max-width: 400px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.box-footer p {
+    color: #f7f7f7;
+}
+.box-footer h2 {
+    font-size: 2em;
+    font-family: "Poppins", sans-serif;
+}
+.box-footer a {
+    text-decoration: none;
+    color: #f7f7f7;
+}
+.box-footer a:hover {
+    font-weight: 600;
+    margin-left: 10px;
+    color: #ffec8e;
+    transition: all 0.3s ease-in-out;
+}
+.rs {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    font-size: 1.5em;
+    justify-content: space-between;
+}
+.rs a:hover {
+    color: #ffec8e;
+    margin-left: 0px;
+    transform: scale(1.2);
+}
